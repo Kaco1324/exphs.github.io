@@ -1,0 +1,21 @@
+# Creating Packages files
+echo Start 
+echo Removing Packages Files...
+rm Packages.bz2
+rm Packages
+echo Reading “debs” folder...
+./dpkg-scanpackages -m debs /dev/null > Packages
+bzip2 -c9 Packages > Packages.bz2
+echo Creating Packages.bz2...
+echo COMPLETE!
+echo Preparing to upload...
+# Upload to github with [message]
+echo "Commit:"
+read message
+git add -A
+git commit -m "$message"
+git push -u origin master
+echo Uploading...
+echo Repo Updated Successfully 
+
+echo 

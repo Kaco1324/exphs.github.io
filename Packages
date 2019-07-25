@@ -1,28 +1,600 @@
-Package: com.supermamon.newpackage
-Version: 2.0.0-1
-Section: Tweaks
-Maintainer: Reposi3 <reposithree@gmail.com>
-Depends: firmware (>7.0), mobilesubstrate
+Package: applist
+Version: 1.5.14
+Section: System
+Maintainer: Ryan Petrich <rpetrich@gmail.com>
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0), com.rpetrich.rocketbootstrap (>= 1.0.6~beta) | firmware (<< 7.0)
+Conflicts: com.a3tweaks.polus (<< 2.0.7)
 Architecture: iphoneos-arm
-Filename: ./debs/com.supermamon.newpackage_2.0.0-1_iphoneos-arm.deb
-Size: 854
-MD5sum: 85a01c41aaaa72b48b08d9d0a67f3016
-Description: This is a sample new package. Firmware should be greater than 7.0
-Name: New Package
-Author: Reposi3 <reposithree@gmail.com>
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.newpackage
+Filename: debs/applist_1.5.14_iphoneos-arm.deb
+Size: 174632
+Installed-Size: 600
+MD5sum: a23ddbf7245070251c60620056367e3a
+Description: Allow extensions to read the list of installed apps
+Name: AppList
+Author: Ryan Petrich <rpetrich@gmail.com>
+Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
 
-Package: com.supermamon.oldpackage
-Version: 1.0.0-1
-Section: Tweaks
-Maintainer: Reposi3 <reposithree@gmail.com>
-Depends: firmware (<7.0)
+Package: bzip2
+Version: 1.0.6-1
+Priority: important
+Section: Archiving
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
 Architecture: iphoneos-arm
-Filename: ./debs/com.supermamon.oldpackage_1.0.0-1_iphoneos-arm.deb
-Size: 860
-MD5sum: 8c606f0c05217aa2a20949091fe516f0
-Description: This is a sample old package. Firmware should be lower than 7.0
-Name: Old Package
-Author: Reposi3 <reposithree@gmail.com>
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.oldpackage
+Filename: debs/bzip2_1.0.6-1_iphoneos-arm.deb
+Size: 59296
+Installed-Size: 408
+MD5sum: a54f371498749c53b3c9e9a074f6dde6
+Description: compression that's slightly better than gzip
+Homepage: http://www.bzip.org/
+
+Package: ca-certificates
+Version: 0.0.1-3
+Priority: optional
+Section: Utilities
+Maintainer: Sam Bingner
+Depends: firmware (>= 2.0)
+Conflicts: org.thebigboss.cacerts
+Provides: org.thebigboss.cacerts
+Replaces: org.thebigboss.cacerts
+Architecture: all
+Filename: debs/ca-certificates_0.0.1-3_all.deb
+Size: 150472
+MD5sum: c9ab7147ab15159aa943d2160cd944bc
+Description: CA certs for curl, wget, git.
+Name: CA Certs
+
+Package: com.adamseiter.morepoweroptions
+Version: 1.3
+Section: Tweaks
+Maintainer: Adam Seiter
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: debs/com.adamseiter.morepoweroptions_1.3_iphoneos-arm.deb
+Size: 40054
+Installed-Size: 282
+MD5sum: f230c35c72678ed5ca9249680d0ce7f9
+Description: New power menu design. Adds more options.
+Name: MorePowerOptions
+Author: Adam Seiter
+
+Package: com.aditkamath.flame
+Version: 1.3
+Priority: optional
+Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware (>= 7.0), mobilesubstrate, preferenceloader, cydia (>= 1.1.19), org.thebigboss.libcolorpicker
+Conflicts: com.aditkamath.cydiatimeout, com.aditkamath.exterminator, net.kister.apttimeout
+Architecture: iphoneos-arm
+Filename: debs/com.aditkamath.flame_1.3_iphoneos-arm.deb
+Size: 99264
+Installed-Size: 367
+MD5sum: 9f6d92338df70478068dd251d2e15cca
+Description: Make Cydia Yours
+Name: Flame
+Author: Adit Kamath <adit@aditkamath.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=flameDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=flameDp
+Icon: file:///Library/PreferenceBundles/Flame.bundle/Flame@2x.png
+
+Package: com.creaturecodiing.ebullience
+Version: 1.0.1b
+Section: Tweaks
+Maintainer: CreatureSurvive
+Depends: mobilesubstrate, com.creaturecoding.libcspreferences
+Architecture: iphoneos-arm
+Filename: debs/com.creaturecodiing.ebullience_1.0.1b_iphoneos-arm.deb
+Size: 24230
+Installed-Size: 176
+MD5sum: ac5a5584546476dd22fa86d677c4bcc9
+Description: Animated UITableViews
+Name: ebullience
+Author: CreatureSurvive
+Depiction: https://creaturesurvive.github.io/repo/cydia/ebullience/depiction/
+
+Package: com.creaturecoding.shuffle
+Version: 0.8.0b
+Section: Tweaks
+Maintainer: CreatureSurvive <support@creaturecoding.com>
+Depends: mobilesubstrate, com.creaturecoding.libcspreferences
+Conflicts: com.cpdigitaldarkroom.placeholder
+Replaces: com.cpdigitaldarkroom.placeholder
+Architecture: iphoneos-arm
+Filename: debs/com.creaturecoding.shuffle_0.8.0b_iphoneos-arm.deb
+Size: 138920
+Installed-Size: 472
+MD5sum: 42ec0417350c69d3e8ef0a828cc30780
+Description: Mix up your preferences
+Name: shuffle
+Author: CreatureSurvive <support@creaturecoding.com>
+Depiction: https://creaturesurvive.github.io/repo/cydia/shuffle/depiction/
+
+Package: com.duraidabdul.neptune
+Version: 1.0.0-15
+Section: Tweaks
+Maintainer: Duraid Abdul
+Depends: mobilesubstrate, firmware(>=12.0)
+Architecture: iphoneos-arm
+Filename: debs/Neptune.deb
+Size: 29418
+Installed-Size: 260
+MD5sum: a06518c81088ffa1a717086edf6ea397
+Description: Enable Apple's modern fluid gestural interface on all devices.
+Name: Neptune
+Author: Duraid Abdul
+
+Package: com.duraidabdul.neptune
+Version: 1.1
+Section: Tweaks
+Maintainer: Duraid Abdul
+Depends: mobilesubstrate, firmware (>= 12.0), preferenceloader
+Architecture: iphoneos-arm
+Filename: debs/com.duraidabdul.neptune_1.1_iphoneos-arm.deb
+Size: 190540
+Installed-Size: 480
+MD5sum: 0fa0e9f544d0b7d2e7546f973ad76c8c
+Description: Enable Apple's modern fluid gestural interface on all devices.
+Name: Neptune
+Author: Duraid Abdul
+
+Package: com.idevicelover.no2theft2
+Version: 1.1
+Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware (>= 11.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
+Conflicts: com.idevicelover.no2theft
+Architecture: iphoneos-arm
+Filename: debs/com.idevicelover.no2theft2_1.1_iphoneos-arm.deb
+Size: 170500
+Installed-Size: 751
+MD5sum: ed4b62673066ced4dd21ea88f27a2289
+Description: No2Theft protects your phone from thieves!
+Name: No2Theft2
+Author: Elias Sfeir <elias_sfeir@live.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=no2theft2Dp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=no2theft2Dp
+Icon: file:///Library/PreferenceBundles/No2Theft2.bundle/icon@2x.png
+
+Package: com.midnightchips.asteroid
+Version: 1.9.9
+Priority: optional
+Section: Tweaks
+Maintainer: midnightchips & the casle
+Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader, com.creaturecoding.libcspreferences, com.creaturesurvive.libcscolorpicker
+Conflicts: 
+Replaces: 
+Architecture: iphoneos-arm
+Filename: debs/Asteroid.deb
+Size: 624646
+Installed-Size: 1048
+MD5sum: 6f51d3572c981d1696b881722b9b6019
+Description: System-Wide Weather.
+Name: Asteroid
+Author: midnightchips & the casle
+Icon: 
+
+Package: com.midnightchips.asteroid
+Version: 1.9.9
+Priority: optional
+Section: Tweaks
+Maintainer: midnightchips & the casle
+Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader, com.creaturecoding.libcspreferences, com.creaturesurvive.libcscolorpicker
+Conflicts: 
+Replaces: 
+Architecture: iphoneos-arm
+Filename: debs/com.midnightchips.asteroid_1.9.9_iphoneos-arm.deb
+Size: 643516
+Installed-Size: 1048
+MD5sum: 40e11ec3fb7890e3ce215e336e8c56aa
+Description: System-Wide Weather.
+Name: Asteroid
+Author: midnightchips & the casle
+Icon: 
+
+Package: com.midnightchips.localhostssh
+Version: 0.0.2
+Section: System
+Maintainer: MidnightChips <midnightchips@gmail.com>
+Depends: firmware (>= 11.0), openssh
+Architecture: iphoneos-arm
+Filename: debs/com.midnightchips.localhostssh_0.0.2_iphoneos-arm.deb
+Size: 1422
+MD5sum: 7bd7d21f8c22b65aea59c56743dc0a53
+Description: Access localhost through SSH on iOS 11
+Name: Local SSH
+Author: MidnightChips <midnightchips@gmail.com>
+Depiction: https://repo.chariz.io/package/com.midnightchips.localhostssh/
+
+Package: com.peterdev.xeon
+Version: 1.1.1
+Section: Tweaks
+Maintainer: PeterDev <djperter@icloud.com>
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11), firmware (>= 11.0), cy+cpu.arm64, com.rpetrich.rocketbootstrap (>= 1.0.7~beta1), com.muirey03.libimagepicker
+Provides: com.alexzielenski.zeppelin
+Architecture: iphoneos-arm
+Filename: debs/Xeon.deb
+Size: 858022
+Installed-Size: 2596
+MD5sum: 2ceeebcc3a6f4d98ff266cc2a56ce9dc
+Description: Supercharge status bar!
+Name: Xeon
+Author: PeterDev <djperter@icloud.com>
+Icon: https://nexusrepo.kro.kr/depictions/com.peterdev.xeon/screenshots/Icon.png
+
+Package: com.rpetrich.rocketbootstrap
+Version: 1.0.7~beta2
+Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0)
+Architecture: iphoneos-arm
+Filename: debs/com.rpetrich.rocketbootstrap_1.0.7~beta2_iphoneos-arm.deb
+Size: 83126
+Installed-Size: 500
+MD5sum: 09d76f4b125a03deb9bc16b450c56ef1
+Description: Support library allowing tweaks to communicate with sandboxed processes
+Name: RocketBootstrap
+Author: Ryan Petrich <rpetrich+rocketbootstrap@gmail.com>
+Homepage: https://www.rpetrich.com/cydia/rocketbootstrap/beta/
+Depiction: https://www.rpetrich.com/cydia/rocketbootstrap/beta/
+
+Package: com.skitty.dune
+Version: 0.1.5
+Section: Tweaks
+Maintainer: Skitty
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Filename: debs/com.skitty.dune_0.1.5_iphoneos-arm.deb
+Size: 52664
+Installed-Size: 348
+MD5sum: 9070114437c1632ddbec76adbb8c0a5b
+Description: A free, open-source iOS dark mode.
+Name: Dune
+Author: Skitty
+Depiction: https://skitty.xyz/repo/depictions/?p=com.skitty.dune
+
+Package: ua.exphs.copy
+Version: 1.0
+Section: Tweaks
+Maintainer: Smit P.
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.copy_1.0_iphoneos-arm.deb
+Size: 431876
+Installed-Size: 772
+MD5sum: 80d9a0decea6131a7bbfd8693a6c5925
+Description: Clipboard history manager for iOS.
+Name: CopyLog Cracked
+Author: TomT000
+Depiction: https://spasix.github.io/description.html?id=ua.exphs.copy
+
+Package: ua.exphs.cylinder
+Version: 1.0.6
+Section: Tweaks
+Maintainer: Smit P.
+Depends: firmware (>= 3.0), mobilesubstrate (>= 0.9.5000), preferenceloader
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.cylinder_1.0.6_iphoneos-arm.deb
+Size: 332628
+Installed-Size: 899
+MD5sum: 62f3165b108a6c0a0e73d7110f1191db
+Description: Make your icons dance
+Name: Cylinder
+Author: Reed Weichler <rweichler+cydia@gmail.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cylinderDp
+Depiction: https://spasix.github.io/description.html?id=ua.exphs.cylinder
+Icon: file:///Library/PreferenceBundles/CylinderSettings.bundle/Icon@2x.png
+
+Package: ua.exphs.folderautoclose10
+Version: 12.0
+Priority: optional
+Section: Tweaks
+Maintainer: Smit P.
+Depends: mobilesubstrate, firmware (>= 10.0)
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.folderautoclose10_12.0_iphoneos-arm.deb
+Size: 4728
+Installed-Size: 99
+MD5sum: d61b1117395fccb7c61e7ca43808a421
+Description: Automatically closes folder after app launched.
+Name: FolderAutoClose
+Author: yuripeyamashita <yuripe.dev@gmail.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=folderautoclose10Dp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=folderautoclose10Dp
+
+Package: ua.exphs.homegesturelite
+Version: 1.2-9+debug
+Section: Tweaks
+Maintainer: MidnightChips PINPAL
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.homegesturelite_1.2-9+debug_iphoneos-arm.deb
+Size: 10426
+Installed-Size: 92
+MD5sum: 86b2e9959e899844c5cfa111b93f49e8
+Description: Enable iPhone X home gesture on other devices.
+Name: HomeGesture Lite
+Author: VitaTaf
+Depiction: https://spasix.github.io/cydia/description.html?id=ua.exphs.homegesture
+
+Package: ua.exphs.libcscolorpicker
+Version: 0.8.2
+Section: System
+Maintainer: CreatureSurvive <support@creaturecoding.com>
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.libcscolorpicker_0.8.2_iphoneos-arm.deb
+Size: 136240
+Installed-Size: 548
+MD5sum: f97bcf30dc51b8b01eb81cc91cfa0752
+Description: A minimal color picker library for developers
+Name: libCSColorPicker
+Author: CreatureSurvive <support@creaturecoding.com>
+Depiction: https://spasix.github.io/description.html?id=ua.exphs.libcscolorpicker
+
+Package: ua.exphs.libcspreferences
+Version: 1.0.9
+Section: System
+Maintainer: Spasix
+Depends: preferenceloader
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.libcspreferences_1.0.9_iphoneos-arm.deb
+Size: 734370
+Installed-Size: 2532
+MD5sum: 153957054c1b6437bd88061f4e182fc6
+Description: A Preference Library that doesn't suck!
+Name: libCSPreferences
+Author: CreatureSurvive <support@creaturecoding.com>
+Depiction: https://spasix.github.io/description.html?id=ua.exphs.libcspreferences
+
+Package: ua.exphs.libsparkapplist
+Version: 1.0.2
+Section: System
+Maintainer: Spark
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.libsparkapplist_1.0.2_iphoneos-arm.deb
+Size: 35246
+Installed-Size: 308
+MD5sum: f8bc279184a24e7ac22d61ecedae2523
+Description: AppList alternative
+Name: libSparkAppList
+Author: Spark
+Depiction: https://spasix.github.io/description.html?id=ua.exphs.libsparkapplist
+
+Package: ua.exphs.skinnysettings
+Version: 1.2.9
+Priority: optional
+Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: mobilesubstrate, firmware (>= 8.0), preferenceloader, org.thebigboss.libcolorpicker
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.skinnysettings_1.2.9_iphoneos-arm.deb
+Size: 96326
+Installed-Size: 440
+MD5sum: 5bb34f6f2446c10fc20d1ebdad69dc6b
+Description: Make your Settings Minimal/Sleek & More!
+Name: SkinnySettings
+Author: CydiaGeek <lucaluca86@aol.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=skinnysettingsDp
+Depiction: https://spasix.github.io/description.html?id=ua.exphs.skinnysettings
+Icon: file:///Library/PreferenceBundles/SkinnySettings.bundle/SkinnySettings@2x.png
+
+Package: ua.exphs.smartvolumecontrol2
+Version: 3.1.2
+Section: Tweaks
+Maintainer: Pulandres
+Depends: mobilesubstrate, preferenceloader, firmware(>=7.0)
+Conflicts: com.pulandres.smartvolumecontrol2
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.smartvolumecontrol2_3.1.2_iphoneos-arm.deb
+Size: 695304
+Installed-Size: 1468
+MD5sum: e41e1fcb527a30439a26d3d6ac48be37
+Description: iOS most advanced volume controller.
+Name: SmartVolumeControl2 Cracked
+Author: midkin
+
+Package: ua.exphs.smoothbattery
+Version: 1.0.3
+Priority: optional
+Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: mobilesubstrate, firmware (>= 9.0), preferenceloader, org.thebigboss.libcolorpicker
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.smoothbattery_1.0.3_iphoneos-arm.deb
+Size: 109462
+Installed-Size: 523
+MD5sum: dd0afb8874f685f361513f03416a5fe6
+Description: Smooth and Color options for your Battery!
+Name: SmoothBattery
+Author: CydiaGeek <lucaluca86@aol.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=smoothbatteryDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=smoothbatteryDp
+Icon: file:///Library/PreferenceBundles/SmoothBattery.bundle/icon@2x.png
+
+Package: ua.exphs.snowboard
+Version: 1.1.5
+Section: Tweaks
+Maintainer: Smit P.
+Depends: mobilesubstrate, jp.ashikase.techsupport, preferenceloader
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.snowboard_1.1.5_iphoneos-arm.deb
+Size: 447724
+Installed-Size: 964
+MD5sum: 7ddea51445f3424f0e2e5b57646a0a40
+Description: Snowboard theming engine
+Name: SnowBoard
+Author: Spark & Dennis D. Bednarz
+Depiction: https://spasix.github.io/description.html?id=ua.exphs.snowboard
+
+Package: ua.exphs.sonus12
+Version: 1.0.2-1
+Section: Tweaks
+Maintainer: Smit P.
+Depends: mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker
+Conflicts: org.fwdr.sonus
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.sonus12_1.0.2-1_iphoneos-arm.deb
+Size: 65828
+Installed-Size: 388
+MD5sum: 4bf3bbedd842546974206401f9cd3f7f
+Description: Some style for the VolumeHUD.
+Name: Sonus12 k
+Author: ubik <cydia@ubikstyl.es>
+Depiction: https://spasix.github.io/description.html?id=ua.exphs.sonus12
+
+Package: ua.exphs.switchus
+Version: 1.3
+Section: Tweaks
+Maintainer: Xarold <contact@xarold.com>
+Depends: mobilesubstrate, firmware (>= 11.0), applist
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.switchus_1.3_iphoneos-arm.deb
+Size: 116194
+MD5sum: b83e28fdc1f533f53234050c6d570abf
+Description: Customize the App Switcher like never before !
+Name: Switchus (Cracked)
+Author: SynnyG
+
+Package: ua.exphs.wdg006
+Version: 1.0.8
+Section: Widgets
+Maintainer: Ryu  <actuallyryu@gmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: debs/ua.exphs.wdg006_1.0.8_iphoneos-arm.deb
+Size: 41924
+MD5sum: 8c5b1221a016fea7540ef02a43a4eadf
+Description: HS Widget for XenHTML/SBHTML
+Name: HS.Ryu_006 Fluid Widget
+Author: Ryu
+
+Package: jp.ashikase.libpackageinfo
+Version: 1.1.0.1-1
+Section: Development
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Pre-Depends: firmware (>= 3.0)
+Architecture: iphoneos-arm
+Filename: debs/jp.ashikase.libpackageinfo_1.1.0.1-1_iphoneos-arm.deb
+Size: 266462
+Installed-Size: 720
+MD5sum: ee47c1d1be917e3518fbdb9d980b8514
+Description: Library to retrieve package information.
+Name: libpackageinfo
+Author: Lance Fetters (ashikase) <support@ashikase.com>
+Homepage: http://github.com/ashikase/libpackageinfo
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libpackageinfoData
+
+Package: jp.ashikase.techsupport
+Version: 1.5.0.1-1
+Section: Development
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Pre-Depends: firmware (>= 3.0)
+Depends: jp.ashikase.libpackageinfo
+Architecture: iphoneos-arm
+Filename: debs/jp.ashikase.techsupport_1.5.0.1-1_iphoneos-arm.deb
+Size: 131150
+Installed-Size: 456
+MD5sum: 5d8bb4922573ab6df1999ee5e0360dbf
+Description: Framework to assist in providing feedback to developers.
+Name: TechSupport Framework
+Author: Lance Fetters (ashikase) <support@ashikase.com>
+Homepage: http://github.com/ashikase/TechSupport
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=techsupportData
+
+Package: ncurses
+Version: 6.1-1
+Priority: required
+Section: System
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses5-libs
+Architecture: iphoneos-arm
+Filename: debs/ncurses_6.1-1_iphoneos-arm.deb
+Size: 699746
+Installed-Size: 7064
+MD5sum: 6a77be84de9f310a7203c06eb99b1553
+Description: feature-complete terminal library
+Name: New Curses
+
+Package: ncurses5-libs
+Version: 5.9-1
+Priority: required
+Section: System
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Architecture: iphoneos-arm
+Filename: debs/ncurses5-libs_5.9-1_iphoneos-arm.deb
+Size: 382726
+Installed-Size: 2288
+MD5sum: 8fe05c9a94b0be97eebcf4b16bb3cbac
+Description: feature-complete terminal library
+Name: New Curses
+
+Package: net.angelxwind.appsyncunified
+Version: 32.0
+Section: Tweaks
+Maintainer: Karen/あけみ (angelXwind) <karen@angelxwind.net>
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 12.1.2)
+Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178
+Provides: appsync
+Replaces: us.hackulo.appsync50
+Architecture: iphoneos-arm
+Filename: debs/net.angelxwind.appsyncunified_32.0_iphoneos-arm.deb
+Size: 71946
+MD5sum: 48ebecf446c6a202f6a7759df5d09299
+Description: Enables the ability to install unsigned/fakesigned iOS applications.
+Name: AppSync Unified
+Author: Linus Yang, Karen/あけみ <karen@angelxwind.net>
+Homepage: https://cydia.angelxwind.net/
+Depiction: https://cydia.angelxwind.net/?page/net.angelxwind.appsyncunified
+
+Package: org.thebigboss.libcolorpicker
+Version: 1.6-1
+Priority: optional
+Section: Development
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware (>= 6.0), mobilesubstrate (>= 0.9.5000), preferenceloader
+Architecture: iphoneos-arm
+Filename: debs/org.thebigboss.libcolorpicker_1.6-1_iphoneos-arm.deb
+Size: 125392
+Installed-Size: 376
+MD5sum: 8e2b24559d503c186ee4c4ae3d5ca0d5
+Description: color picker library for developers
+Name: libcolorpicker
+Author: PixelFire <pixelfiredev@helpful.io>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcolorpickerDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcolorpickerDp
+
+Package: org.thebigboss.swipeformore
+Version: 1.1.9
+Section: Tweaks
+Maintainer: PoomSmart
+Depends: firmware (>= 8.0), mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Filename: debs/org.thebigboss.swipeformore_1.1.9_iphoneos-arm.deb
+Size: 33898
+Installed-Size: 140
+MD5sum: 837f6ac1f6413d6fbc1f97cce093f350
+Description: Manage packages via swipe.
+Name: SwipeForMore (Debug)
+Author: PoomSmart
+
+Package: ws.hbang.common
+Version: 1.12
+Priority: optional
+Section: Development
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: preferenceloader, mobilesubstrate, jp.ashikase.techsupport, com.rpetrich.rocketbootstrap
+Architecture: iphoneos-arm
+Filename: debs/ws.hbang.common_1.12_iphoneos-arm.deb
+Size: 220560
+Installed-Size: 830
+MD5sum: 1d65898c8fd058aaf71e076a80ad2812
+Description: Support library for tweak settings
+Name: Cephei
+Author: HASHBANG Productions <support@hbang.ws>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=hashbangcommonDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=hashbangcommonDp
 
